@@ -11,12 +11,8 @@ namespace StoreDB
 
         private void buyItemButton_Click(object sender, System.EventArgs e)
         {
-
-        }
-
-        private void sellItemButton_Click(object sender, System.EventArgs e)
-        {
-
+            Program.buyItemsForm.Show();
+            Program.userMenuForm.Hide();
         }
 
         private void privacySettingButton_Click(object sender, System.EventArgs e)
@@ -28,6 +24,12 @@ namespace StoreDB
         private void backButton_Click(object sender, System.EventArgs e)
         {
             Program.loginForm.Show();
+            Program.userMenuForm.Hide();
+        }
+
+        private void checkOrderButton_Click(object sender, System.EventArgs e)
+        {
+            Program.checkOrderForm.Show();
             Program.userMenuForm.Hide();
         }
     }

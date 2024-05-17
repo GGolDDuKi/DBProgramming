@@ -88,7 +88,7 @@ public class DB
             {
                 mysql.Open();
 
-                string selectQuery = $"SELECT * FROM accountTBL WHERE id='{id}';";
+                string selectQuery = $"SELECT * FROM accounttbl WHERE id='{id}';";
                 MySqlCommand selectCommand = new MySqlCommand(selectQuery, mysql);
                 MySqlDataReader reader = selectCommand.ExecuteReader();
 
@@ -101,7 +101,7 @@ public class DB
                 reader.Close();
 
                 //중복되지 않는 아이디일 경우
-                string insertQuery = $"INSERT INTO accountbl VALUES ('{id}', '{pw}', 'user', '{name}', '{phoneNumber}', '{address}');";
+                string insertQuery = $"INSERT INTO accounttbl VALUES ('{id}', '{pw}', 'user', '{name}', '{phoneNumber}', '{address}');";
                 MySqlCommand insertCommand = new MySqlCommand(insertQuery, mysql);
                 if (insertCommand.ExecuteNonQuery() == 1)
                     MessageBox.Show("계정이 성공적으로 생성되었습니다.");

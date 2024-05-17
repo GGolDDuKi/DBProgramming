@@ -36,20 +36,21 @@
             this.Authority = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuButton = new System.Windows.Forms.Button();
             this.changeAuthButton = new System.Windows.Forms.Button();
-            this.VisibleChanged += Store_ManageUsers_VisibleChanged;
+            this.deleteButton = new System.Windows.Forms.Button();
             this.userListBox.SuspendLayout();
             this.SuspendLayout();
-            this.userListView.SelectedIndexChanged += userListView_SelectedIndexChanged;
             // 
             // userListBox
             // 
             this.userListBox.Controls.Add(this.userListView);
-            this.userListBox.Location = new System.Drawing.Point(12, 12);
+            this.userListBox.Location = new System.Drawing.Point(17, 18);
+            this.userListBox.Margin = new System.Windows.Forms.Padding(4);
             this.userListBox.Name = "userListBox";
-            this.userListBox.Size = new System.Drawing.Size(321, 274);
+            this.userListBox.Padding = new System.Windows.Forms.Padding(4);
+            this.userListBox.Size = new System.Drawing.Size(459, 411);
             this.userListBox.TabIndex = 6;
             this.userListBox.TabStop = false;
-            this.userListBox.Text = "User List";
+            this.userListBox.Text = "사용자 목록";
             // 
             // userListView
             // 
@@ -57,63 +58,80 @@
             this.UserID,
             this.UserName,
             this.Authority});
+            this.userListView.FullRowSelect = true;
             this.userListView.HideSelection = false;
             this.userListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1});
-            this.userListView.Location = new System.Drawing.Point(8, 17);
+            this.userListView.Location = new System.Drawing.Point(11, 26);
+            this.userListView.Margin = new System.Windows.Forms.Padding(4);
             this.userListView.Name = "userListView";
-            this.userListView.Size = new System.Drawing.Size(305, 243);
+            this.userListView.Size = new System.Drawing.Size(434, 362);
             this.userListView.TabIndex = 0;
             this.userListView.UseCompatibleStateImageBehavior = false;
             this.userListView.View = System.Windows.Forms.View.Details;
-            this.userListView.FullRowSelect = true;
             // 
             // UserID
             // 
-            this.UserID.Text = "User ID";
+            this.UserID.Text = "사용자 ID";
             this.UserID.Width = 126;
             // 
             // UserName
             // 
-            this.UserName.Text = "User Name";
+            this.UserName.Text = "사용자 이름";
             this.UserName.Width = 109;
             // 
             // Authority
             // 
-            this.Authority.Text = "Authority";
+            this.Authority.Text = "권한";
             this.Authority.Width = 66;
             // 
             // menuButton
             // 
-            this.menuButton.Location = new System.Drawing.Point(12, 324);
+            this.menuButton.Location = new System.Drawing.Point(17, 486);
+            this.menuButton.Margin = new System.Windows.Forms.Padding(4);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(321, 26);
+            this.menuButton.Size = new System.Drawing.Size(459, 39);
             this.menuButton.TabIndex = 7;
-            this.menuButton.Text = "Go to Menu";
+            this.menuButton.Text = "돌아가기";
             this.menuButton.UseVisualStyleBackColor = true;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // changeAuthButton
             // 
-            this.changeAuthButton.Location = new System.Drawing.Point(12, 292);
+            this.changeAuthButton.Location = new System.Drawing.Point(248, 439);
+            this.changeAuthButton.Margin = new System.Windows.Forms.Padding(4);
             this.changeAuthButton.Name = "changeAuthButton";
-            this.changeAuthButton.Size = new System.Drawing.Size(321, 26);
+            this.changeAuthButton.Size = new System.Drawing.Size(228, 39);
             this.changeAuthButton.TabIndex = 8;
-            this.changeAuthButton.Text = "Change Authority";
+            this.changeAuthButton.Text = "사용자 권한 변경";
             this.changeAuthButton.UseVisualStyleBackColor = true;
             this.changeAuthButton.Click += new System.EventHandler(this.changeAuthButton_Click);
             // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(17, 439);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(4);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(228, 39);
+            this.deleteButton.TabIndex = 9;
+            this.deleteButton.Text = "사용자 삭제";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
+            this.VisibleChanged += new System.EventHandler(this.Store_ManageUsers_VisibleChanged);
+            // 
             // Store_ManageUsers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 360);
+            this.ClientSize = new System.Drawing.Size(493, 540);
+            this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.changeAuthButton);
             this.Controls.Add(this.menuButton);
             this.Controls.Add(this.userListBox);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Store_ManageUsers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Store_ManageUsers";
+            this.Text = "사용자관리";
             this.userListBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -127,5 +145,6 @@
         private System.Windows.Forms.Button menuButton;
         private System.Windows.Forms.ColumnHeader Authority;
         private System.Windows.Forms.Button changeAuthButton;
+        private System.Windows.Forms.Button deleteButton;
     }
 }

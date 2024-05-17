@@ -46,127 +46,141 @@
             // 
             // pwInput
             // 
-            this.pwInput.Location = new System.Drawing.Point(34, 39);
+            this.pwInput.Location = new System.Drawing.Point(136, 58);
+            this.pwInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pwInput.Name = "pwInput";
-            this.pwInput.Size = new System.Drawing.Size(197, 21);
+            this.pwInput.Size = new System.Drawing.Size(193, 28);
             this.pwInput.TabIndex = 1;
             // 
             // idLabel
             // 
             this.idLabel.AutoSize = true;
-            this.idLabel.Location = new System.Drawing.Point(12, 18);
+            this.idLabel.Location = new System.Drawing.Point(67, 27);
+            this.idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(16, 12);
+            this.idLabel.Size = new System.Drawing.Size(62, 18);
             this.idLabel.TabIndex = 2;
-            this.idLabel.Text = "ID";
+            this.idLabel.Text = "아이디";
             // 
             // pwLabel
             // 
             this.pwLabel.AutoSize = true;
-            this.pwLabel.Location = new System.Drawing.Point(5, 44);
+            this.pwLabel.Location = new System.Drawing.Point(49, 63);
+            this.pwLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pwLabel.Name = "pwLabel";
-            this.pwLabel.Size = new System.Drawing.Size(23, 12);
+            this.pwLabel.Size = new System.Drawing.Size(80, 18);
             this.pwLabel.TabIndex = 3;
-            this.pwLabel.Text = "PW";
+            this.pwLabel.Text = "비밀번호";
             // 
             // changeButton
             // 
-            this.changeButton.Location = new System.Drawing.Point(99, 254);
+            this.changeButton.Location = new System.Drawing.Point(141, 342);
+            this.changeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.changeButton.Name = "changeButton";
-            this.changeButton.Size = new System.Drawing.Size(130, 23);
+            this.changeButton.Size = new System.Drawing.Size(186, 34);
             this.changeButton.TabIndex = 5;
-            this.changeButton.Text = "Change Information";
+            this.changeButton.Text = "정보 변경";
             this.changeButton.UseVisualStyleBackColor = true;
             this.changeButton.Click += new System.EventHandler(this.changeButton_Click);
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(5, 126);
+            this.nameLabel.Location = new System.Drawing.Point(85, 152);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(39, 12);
+            this.nameLabel.Size = new System.Drawing.Size(44, 18);
             this.nameLabel.TabIndex = 6;
-            this.nameLabel.Text = "Name";
+            this.nameLabel.Text = "이름";
             // 
             // nameInput
             // 
-            this.nameInput.Location = new System.Drawing.Point(50, 121);
+            this.nameInput.Location = new System.Drawing.Point(136, 146);
+            this.nameInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nameInput.Name = "nameInput";
-            this.nameInput.Size = new System.Drawing.Size(179, 21);
+            this.nameInput.Size = new System.Drawing.Size(193, 28);
             this.nameInput.TabIndex = 7;
             // 
             // phoneNumberLabel
             // 
             this.phoneNumberLabel.AutoSize = true;
-            this.phoneNumberLabel.Location = new System.Drawing.Point(5, 154);
+            this.phoneNumberLabel.Location = new System.Drawing.Point(7, 192);
+            this.phoneNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.phoneNumberLabel.Name = "phoneNumberLabel";
-            this.phoneNumberLabel.Size = new System.Drawing.Size(184, 12);
+            this.phoneNumberLabel.Size = new System.Drawing.Size(234, 18);
             this.phoneNumberLabel.TabIndex = 8;
-            this.phoneNumberLabel.Text = "PhoneNumber (ex.01012345678)";
+            this.phoneNumberLabel.Text = "전화번호 (ex.01012345678)";
             // 
             // phoneNumberInput
             // 
-            this.phoneNumberInput.Location = new System.Drawing.Point(7, 169);
+            this.phoneNumberInput.Location = new System.Drawing.Point(10, 223);
+            this.phoneNumberInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.phoneNumberInput.Name = "phoneNumberInput";
-            this.phoneNumberInput.Size = new System.Drawing.Size(222, 21);
+            this.phoneNumberInput.Size = new System.Drawing.Size(315, 28);
             this.phoneNumberInput.TabIndex = 9;
             // 
             // addressLabel
             // 
             this.addressLabel.AutoSize = true;
-            this.addressLabel.Location = new System.Drawing.Point(5, 199);
+            this.addressLabel.Location = new System.Drawing.Point(7, 267);
+            this.addressLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.addressLabel.Name = "addressLabel";
-            this.addressLabel.Size = new System.Drawing.Size(52, 12);
+            this.addressLabel.Size = new System.Drawing.Size(44, 18);
             this.addressLabel.TabIndex = 10;
-            this.addressLabel.Text = "Address";
+            this.addressLabel.Text = "주소";
             // 
             // addressInput
             // 
-            this.addressInput.Location = new System.Drawing.Point(7, 214);
+            this.addressInput.Location = new System.Drawing.Point(10, 296);
+            this.addressInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addressInput.Name = "addressInput";
-            this.addressInput.Size = new System.Drawing.Size(222, 21);
+            this.addressInput.Size = new System.Drawing.Size(315, 28);
             this.addressInput.TabIndex = 11;
             // 
             // confirmPwLabel
             // 
             this.confirmPwLabel.AutoSize = true;
-            this.confirmPwLabel.Location = new System.Drawing.Point(5, 71);
+            this.confirmPwLabel.Location = new System.Drawing.Point(7, 106);
+            this.confirmPwLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.confirmPwLabel.Name = "confirmPwLabel";
-            this.confirmPwLabel.Size = new System.Drawing.Size(71, 12);
+            this.confirmPwLabel.Size = new System.Drawing.Size(122, 18);
             this.confirmPwLabel.TabIndex = 13;
-            this.confirmPwLabel.Text = "Confirm PW";
+            this.confirmPwLabel.Text = "비밀번호 확인";
             // 
             // confirmPwInput
             // 
-            this.confirmPwInput.Location = new System.Drawing.Point(34, 88);
+            this.confirmPwInput.Location = new System.Drawing.Point(136, 103);
+            this.confirmPwInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.confirmPwInput.Name = "confirmPwInput";
-            this.confirmPwInput.Size = new System.Drawing.Size(197, 21);
+            this.confirmPwInput.Size = new System.Drawing.Size(193, 28);
             this.confirmPwInput.TabIndex = 12;
             // 
             // usingIdLabel
             // 
             this.usingIdLabel.AutoSize = true;
-            this.usingIdLabel.Location = new System.Drawing.Point(121, 18);
+            this.usingIdLabel.Location = new System.Drawing.Point(173, 27);
+            this.usingIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.usingIdLabel.Name = "usingIdLabel";
-            this.usingIdLabel.Size = new System.Drawing.Size(16, 12);
+            this.usingIdLabel.Size = new System.Drawing.Size(62, 18);
             this.usingIdLabel.TabIndex = 14;
-            this.usingIdLabel.Text = "ID";
+            this.usingIdLabel.Text = "아이디";
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(7, 254);
+            this.cancelButton.Location = new System.Drawing.Point(10, 342);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(86, 23);
+            this.cancelButton.Size = new System.Drawing.Size(123, 34);
             this.cancelButton.TabIndex = 15;
-            this.cancelButton.Text = "Cancel";
+            this.cancelButton.Text = "취소";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // Store_PrivacySetting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(241, 289);
+            this.ClientSize = new System.Drawing.Size(344, 397);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.usingIdLabel);
             this.Controls.Add(this.confirmPwInput);
@@ -181,9 +195,10 @@
             this.Controls.Add(this.pwLabel);
             this.Controls.Add(this.idLabel);
             this.Controls.Add(this.pwInput);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Store_PrivacySetting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Store_PrivacySetting";
+            this.Text = "개인정보변경";
             this.VisibleChanged += new System.EventHandler(this.Store_PrivacySetting_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

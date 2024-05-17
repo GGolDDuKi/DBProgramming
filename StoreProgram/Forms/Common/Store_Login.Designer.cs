@@ -38,70 +38,77 @@
             // 
             // idInput
             // 
-            this.idInput.Location = new System.Drawing.Point(34, 12);
+            this.idInput.Location = new System.Drawing.Point(102, 18);
+            this.idInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.idInput.Name = "idInput";
-            this.idInput.Size = new System.Drawing.Size(197, 21);
+            this.idInput.Size = new System.Drawing.Size(227, 28);
             this.idInput.TabIndex = 0;
             // 
             // pwInput
             // 
-            this.pwInput.Location = new System.Drawing.Point(34, 39);
+            this.pwInput.Location = new System.Drawing.Point(102, 58);
+            this.pwInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pwInput.Name = "pwInput";
-            this.pwInput.Size = new System.Drawing.Size(197, 21);
+            this.pwInput.Size = new System.Drawing.Size(227, 28);
             this.pwInput.TabIndex = 1;
             // 
             // idLabel
             // 
             this.idLabel.AutoSize = true;
-            this.idLabel.Location = new System.Drawing.Point(12, 18);
+            this.idLabel.Location = new System.Drawing.Point(31, 23);
+            this.idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(16, 12);
+            this.idLabel.Size = new System.Drawing.Size(62, 18);
             this.idLabel.TabIndex = 2;
-            this.idLabel.Text = "ID";
+            this.idLabel.Text = "아이디";
             // 
             // pwLabel
             // 
             this.pwLabel.AutoSize = true;
-            this.pwLabel.Location = new System.Drawing.Point(5, 44);
+            this.pwLabel.Location = new System.Drawing.Point(13, 63);
+            this.pwLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pwLabel.Name = "pwLabel";
-            this.pwLabel.Size = new System.Drawing.Size(23, 12);
+            this.pwLabel.Size = new System.Drawing.Size(80, 18);
             this.pwLabel.TabIndex = 3;
-            this.pwLabel.Text = "PW";
+            this.pwLabel.Text = "비밀번호";
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(7, 66);
+            this.loginButton.Location = new System.Drawing.Point(102, 99);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(224, 23);
+            this.loginButton.Size = new System.Drawing.Size(228, 34);
             this.loginButton.TabIndex = 4;
-            this.loginButton.Text = "Login";
+            this.loginButton.Text = "로그인";
             this.loginButton.UseVisualStyleBackColor = true;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // registerButton
             // 
-            this.registerButton.Location = new System.Drawing.Point(7, 95);
+            this.registerButton.Location = new System.Drawing.Point(9, 99);
+            this.registerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.registerButton.Name = "registerButton";
-            this.registerButton.Size = new System.Drawing.Size(224, 23);
+            this.registerButton.Size = new System.Drawing.Size(89, 34);
             this.registerButton.TabIndex = 5;
-            this.registerButton.Text = "Register";
+            this.registerButton.Text = "회원가입";
             this.registerButton.UseVisualStyleBackColor = true;
             this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
             // 
             // Store_Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(241, 125);
+            this.ClientSize = new System.Drawing.Size(344, 148);
             this.Controls.Add(this.registerButton);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.pwLabel);
             this.Controls.Add(this.idLabel);
             this.Controls.Add(this.pwInput);
             this.Controls.Add(this.idInput);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Store_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Store_Login";
+            this.Text = "로그인";
             this.Load += new System.EventHandler(this.Store_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

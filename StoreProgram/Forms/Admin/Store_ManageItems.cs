@@ -16,20 +16,22 @@ namespace StoreDB
         public Store_ManageItems()
         {
             InitializeComponent();
-        }
+			this.itemListView.SelectedIndexChanged += ItemListView_SelectedIndexChanged;
+			this.VisibleChanged += Store_ManageItems_VisibleChanged;
+		}
 
 		private void Store_ManageItems_VisibleChanged(object sender, EventArgs e)
         {
 			if (this.Visible)
             {
-				updateTable();
+				UpdateTable();
 				Init();
             }
         }
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-			updateTable();
+			UpdateTable();
 		}
 
 		private void addButton_Click(object sender, EventArgs e)
@@ -44,10 +46,10 @@ namespace StoreDB
 
 					MySqlCommand command = new MySqlCommand(insertQuery, mysql);
 					if (command.ExecuteNonQuery() != 1)
-						MessageBox.Show("물품 정보 추가에 실패하였습니다.");
+						MessageBox.Show("제품 정보 추가에 실패하였습니다.");
 
 					Init();
-					updateTable();
+					UpdateTable();
 				}
 			}
 			catch (Exception exc)
@@ -67,10 +69,10 @@ namespace StoreDB
 
 					MySqlCommand command = new MySqlCommand(updateQuery, mysql);
 					if (command.ExecuteNonQuery() != 1)
-						MessageBox.Show("물품 정보 수정에 실패하였습니다.");
+						MessageBox.Show("제품 정보 수정에 실패하였습니다.");
 
 					Init();
-					updateTable();
+					UpdateTable();
 				}
 			}
 			catch (Exception exc)
@@ -90,10 +92,10 @@ namespace StoreDB
 
 					MySqlCommand command = new MySqlCommand(deleteQuery, mysql);
 					if (command.ExecuteNonQuery() != 1)
-						MessageBox.Show("물품 정보 삭제에 실패하였습니다.");
+						MessageBox.Show("제품 정보 삭제에 실패하였습니다.");
 
 					Init();
-					updateTable();
+					UpdateTable();
 				}
 			}
 			catch (Exception exc)
@@ -111,8 +113,6 @@ namespace StoreDB
 				itemNameInput.Text = selectedItem.SubItems[0].Text;
 				eachPriceInput.Text = selectedItem.SubItems[1].Text;
 				countInput.Text = selectedItem.SubItems[2].Text;
-
-				selectedItem.BackColor = System.Drawing.Color.LightBlue;
 			}
 		}
 
@@ -123,7 +123,7 @@ namespace StoreDB
 			countInput.Text = "";
         }
 
-		private void updateTable()
+		private void UpdateTable()
 		{
 			try
 			{

@@ -41,7 +41,7 @@
             this.manageItemsButton.Name = "manageItemsButton";
             this.manageItemsButton.Size = new System.Drawing.Size(96, 89);
             this.manageItemsButton.TabIndex = 0;
-            this.manageItemsButton.Text = "Manage\nItems";
+            this.manageItemsButton.Text = "제품 관리";
             this.manageItemsButton.UseVisualStyleBackColor = true;
             this.manageItemsButton.Click += new System.EventHandler(this.manageItemsButton_Click);
             // 
@@ -51,7 +51,7 @@
             this.manageUsersButton.Name = "manageUsersButton";
             this.manageUsersButton.Size = new System.Drawing.Size(96, 89);
             this.manageUsersButton.TabIndex = 1;
-            this.manageUsersButton.Text = "Manage\nUsers";
+            this.manageUsersButton.Text = "사용자 관리";
             this.manageUsersButton.UseVisualStyleBackColor = true;
             this.manageUsersButton.Click += new System.EventHandler(this.manageUsersButton_Click);
             // 
@@ -61,7 +61,7 @@
             this.privacySettingButton.Name = "privacySettingButton";
             this.privacySettingButton.Size = new System.Drawing.Size(145, 37);
             this.privacySettingButton.TabIndex = 2;
-            this.privacySettingButton.Text = "Privacy Setting";
+            this.privacySettingButton.Text = "개인정보 설정";
             this.privacySettingButton.UseVisualStyleBackColor = true;
             this.privacySettingButton.Click += new System.EventHandler(this.privacySettingButton_Click);
             // 
@@ -71,7 +71,7 @@
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(145, 37);
             this.backButton.TabIndex = 3;
-            this.backButton.Text = "Go Back";
+            this.backButton.Text = "돌아가기";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
@@ -81,7 +81,7 @@
             this.manageOrdersButton.Name = "manageOrdersButton";
             this.manageOrdersButton.Size = new System.Drawing.Size(96, 89);
             this.manageOrdersButton.TabIndex = 4;
-            this.manageOrdersButton.Text = "Manage\nOrders";
+            this.manageOrdersButton.Text = "주문 관리";
             this.manageOrdersButton.UseVisualStyleBackColor = true;
             this.manageOrdersButton.Click += new System.EventHandler(this.manageOrdersButton_Click);
             // 
@@ -97,7 +97,7 @@
             this.Controls.Add(this.manageItemsButton);
             this.Name = "Store_AdminMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Store_AdminMenu";
+            this.Text = "관리자 메뉴";
             this.ResumeLayout(false);
 
         }

@@ -18,13 +18,14 @@ namespace StoreDB
         public Store_ManageUsers()
         {
             InitializeComponent();
-        }
+			this.userListView.SelectedIndexChanged += userListView_SelectedIndexChanged;
+		}
 
 		private void Store_ManageUsers_VisibleChanged(object sender, EventArgs e)
 		{
 			if (this.Visible)
 			{
-				updateTable();
+				UpdateTable();
 				Init();
 			}
 		}
@@ -34,9 +35,7 @@ namespace StoreDB
 			if (userListView.SelectedItems.Count > 0)
 			{
 				ListViewItem selectedUser = userListView.SelectedItems[0];
-
 				selectedId = selectedUser.SubItems[0].Text;
-				selectedUser.BackColor = System.Drawing.Color.LightBlue;
 			}
 		}
 
@@ -76,7 +75,7 @@ namespace StoreDB
 						MessageBox.Show("선택된 유저의 권한을 변경하였습니다.");
 
 					Init();
-					updateTable();
+					UpdateTable();
 				}
 			}
 			catch (Exception exc)
@@ -90,7 +89,7 @@ namespace StoreDB
 			selectedId = "";
 		}
 
-		private void updateTable()
+		private void UpdateTable()
 		{
 			try
 			{
@@ -130,6 +129,38 @@ namespace StoreDB
 			userListView.Items.Clear();
 			Program.manageUsersForm.Hide();
 			Program.adminMenuForm.Show();
+		}
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+			if (selectedId == "")
+			{
+				MessageBox.Show("선택된 유저가 없습니다.");
+				return;
+			}
+
+			try
+			{
+				using (MySqlConnection mysql = new MySqlConnection(Program.connectionString))
+				{
+					mysql.Open();
+
+					string deleteQuery = $"DELETE FROM accounttbl WHERE id='{selectedId}';";
+
+					MySqlCommand command = new MySqlCommand(deleteQuery, mysql);
+					if (command.ExecuteNonQuery() != 1)
+						MessageBox.Show("선택된 계정의 삭제가 실패했습니다.");
+					else
+						MessageBox.Show("선택된 계정이 삭제되었습니다.");
+
+					Init();
+					UpdateTable();
+				}
+			}
+			catch (Exception exc)
+			{
+				MessageBox.Show(exc.Message);
+			}
 		}
     }
 }

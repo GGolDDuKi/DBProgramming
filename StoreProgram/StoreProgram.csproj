@@ -119,6 +119,18 @@
     <Compile Include="Forms\Admin\Store_ManageUsers.Designer.cs">
       <DependentUpon>Store_ManageUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\User\Store_BuyItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\Store_BuyItems.Designer.cs">
+      <DependentUpon>Store_BuyItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\Store_CheckOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\Store_CheckOrder.Designer.cs">
+      <DependentUpon>Store_CheckOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Scripts\DB.cs" />
     <Compile Include="Scripts\Define.cs" />
     <Compile Include="Forms\Admin\Store_AdminMenu.cs">
@@ -164,6 +176,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\Store_ManageUsers.resx">
       <DependentUpon>Store_ManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\Store_BuyItems.resx">
+      <DependentUpon>Store_BuyItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\Store_CheckOrder.resx">
+      <DependentUpon>Store_CheckOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

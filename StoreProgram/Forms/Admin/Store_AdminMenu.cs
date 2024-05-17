@@ -31,7 +31,8 @@ namespace StoreDB
 
         private void manageOrdersButton_Click(object sender, EventArgs e)
         {
-
+            Program.manageOrdersForm.Show();
+            Program.adminMenuForm.Hide();
         }
 
         private void privacySettingButton_Click(object sender, System.EventArgs e)

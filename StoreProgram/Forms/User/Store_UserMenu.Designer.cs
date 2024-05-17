@@ -29,63 +29,68 @@
         private void InitializeComponent()
         {
             this.buyItemButton = new System.Windows.Forms.Button();
-            this.sellItemButton = new System.Windows.Forms.Button();
+            this.checkOrderButton = new System.Windows.Forms.Button();
             this.privacySettingButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buyItemButton
             // 
-            this.buyItemButton.Location = new System.Drawing.Point(12, 12);
+            this.buyItemButton.Location = new System.Drawing.Point(17, 18);
+            this.buyItemButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buyItemButton.Name = "buyItemButton";
-            this.buyItemButton.Size = new System.Drawing.Size(145, 89);
+            this.buyItemButton.Size = new System.Drawing.Size(207, 134);
             this.buyItemButton.TabIndex = 0;
-            this.buyItemButton.Text = "Buy Items";
+            this.buyItemButton.Text = "제품 구매";
             this.buyItemButton.UseVisualStyleBackColor = true;
             this.buyItemButton.Click += new System.EventHandler(this.buyItemButton_Click);
             // 
-            // sellItemButton
+            // checkOrderButton
             // 
-            this.sellItemButton.Location = new System.Drawing.Point(163, 12);
-            this.sellItemButton.Name = "sellItemButton";
-            this.sellItemButton.Size = new System.Drawing.Size(145, 89);
-            this.sellItemButton.TabIndex = 1;
-            this.sellItemButton.Text = "Sell Items";
-            this.sellItemButton.UseVisualStyleBackColor = true;
-            this.sellItemButton.Click += new System.EventHandler(this.sellItemButton_Click);
+            this.checkOrderButton.Location = new System.Drawing.Point(233, 18);
+            this.checkOrderButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkOrderButton.Name = "checkOrderButton";
+            this.checkOrderButton.Size = new System.Drawing.Size(207, 134);
+            this.checkOrderButton.TabIndex = 1;
+            this.checkOrderButton.Text = "주문 조회";
+            this.checkOrderButton.UseVisualStyleBackColor = true;
+            this.checkOrderButton.Click += new System.EventHandler(this.checkOrderButton_Click);
             // 
             // privacySettingButton
             // 
-            this.privacySettingButton.Location = new System.Drawing.Point(12, 110);
+            this.privacySettingButton.Location = new System.Drawing.Point(17, 165);
+            this.privacySettingButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.privacySettingButton.Name = "privacySettingButton";
-            this.privacySettingButton.Size = new System.Drawing.Size(145, 37);
+            this.privacySettingButton.Size = new System.Drawing.Size(207, 56);
             this.privacySettingButton.TabIndex = 2;
-            this.privacySettingButton.Text = "Privacy Setting";
+            this.privacySettingButton.Text = "개인정보 설정";
             this.privacySettingButton.UseVisualStyleBackColor = true;
             this.privacySettingButton.Click += new System.EventHandler(this.privacySettingButton_Click);
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(163, 110);
+            this.backButton.Location = new System.Drawing.Point(233, 165);
+            this.backButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(145, 37);
+            this.backButton.Size = new System.Drawing.Size(207, 56);
             this.backButton.TabIndex = 3;
-            this.backButton.Text = "Go Back";
+            this.backButton.Text = "돌아가기";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
-            // Store_Menu
+            // Store_UserMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(320, 159);
+            this.ClientSize = new System.Drawing.Size(457, 238);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.privacySettingButton);
-            this.Controls.Add(this.sellItemButton);
+            this.Controls.Add(this.checkOrderButton);
             this.Controls.Add(this.buyItemButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Store_UserMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Store_UserMenu";
+            this.Text = "사용자 메뉴";
             this.ResumeLayout(false);
 
         }
@@ -93,7 +98,7 @@
         #endregion
 
         private System.Windows.Forms.Button buyItemButton;
-        private System.Windows.Forms.Button sellItemButton;
+        private System.Windows.Forms.Button checkOrderButton;
         private System.Windows.Forms.Button privacySettingButton;
         private System.Windows.Forms.Button backButton;
     }

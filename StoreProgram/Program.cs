@@ -14,10 +14,10 @@ namespace StoreDB
         public static Store_AdminMenu adminMenuForm;
         public static Store_ManageItems manageItemForm;
         public static Store_ManageUsers manageUsersForm;
+        public static Store_ManageOrders manageOrdersForm;
+        public static Store_BuyItems buyItemsForm;
+        public static Store_CheckOrder checkOrderForm;  
 
-        public static string id = "";
-        public static string pw = "";
-        //public static string connectionString = $"Server=localhost;Port=3306;Database=storedb;Uid={id};Pwd={pw}";
         public static string connectionString = $"Server=localhost;Port=3306;Database=storedb;Uid=DDuKi;Pwd=dduki1520310asd@";
 
         public static UserInfo UserInfo { get; set; } = new UserInfo();
@@ -40,6 +40,9 @@ namespace StoreDB
             adminMenuForm = new Store_AdminMenu();
             manageItemForm = new Store_ManageItems();
             manageUsersForm = new Store_ManageUsers();
+            manageOrdersForm = new Store_ManageOrders();
+            buyItemsForm = new Store_BuyItems();
+            checkOrderForm = new Store_CheckOrder();
         }
     }
 }
