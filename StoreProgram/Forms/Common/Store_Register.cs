@@ -15,6 +15,7 @@ namespace StoreDB
         private void Store_Load(object sender, EventArgs e)
         {
             Init();
+            //비밀번호 입력 시 *로 표시
             pwInput.PasswordChar = '*';
             confirmPwInput.PasswordChar = '*';
         }

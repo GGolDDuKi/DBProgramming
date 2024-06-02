@@ -75,6 +75,7 @@ namespace StoreDB
 			}
 		}
 
+		//주문 취소 버튼 이벤트
         private void cancelButton_Click(object sender, EventArgs e)
         {
 			if (orderId == default(int))
@@ -118,6 +119,7 @@ namespace StoreDB
 			}
 		}
 
+		//주문 완료 버튼 이벤트
         private void completeButton_Click(object sender, EventArgs e)
         {
 			if (orderId == default(int))

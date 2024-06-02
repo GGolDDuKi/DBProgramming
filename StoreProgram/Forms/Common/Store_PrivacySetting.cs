@@ -33,6 +33,7 @@ namespace StoreDB
             addressInput.Text = $"{Program.UserInfo.Address}";
         }
 
+        //개인 정보 변경 버튼 이벤트
         private void changeButton_Click(object sender, EventArgs e)
         {
             string pw = pwInput.Text;
@@ -41,7 +42,7 @@ namespace StoreDB
             string phoneNumber = phoneNumberInput.Text;
             string address = addressInput.Text;
 
-           DB.ChangePrivacyInfo(pw, confirmPw, name, phoneNumber, address, () => { Init(); });
+            DB.ChangePrivacyInfo(pw, confirmPw, name, phoneNumber, address, () => { Init(); });
         }
 
         private void cancelButton_Click(object sender, EventArgs e)

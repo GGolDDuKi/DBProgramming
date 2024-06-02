@@ -10,6 +10,12 @@ using static Define;
 
 public class DB
 {
+    /// <summary>
+    /// id와 pw를 대조하여 계정이 확인될 경우, 계정 정보를 가져와 유저 프로그램에서 저장합니다.
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="pw"></param>
+    /// <param name="action"></param>
     public static void LoadUserInfo(string id, string pw, Action action = null)
     {
         if (id == "" || pw == "")
@@ -111,6 +117,7 @@ public class DB
                 if (action != null)
                     action();
 
+                //로그인 폼으로 돌아가기
                 Program.registerForm.Hide();
                 Program.loginForm.Show();
             }
@@ -169,18 +176,6 @@ public class DB
 
                             if (action != null)
                                 action();
-
-                            switch (Program.UserInfo.Authority)
-                            {
-                                case "admin":
-                                    Program.loginForm.Hide();
-                                    Program.adminMenuForm.Show();
-                                    break;
-                                case "user":
-                                    Program.loginForm.Hide();
-                                    Program.userMenuForm.Show();
-                                    break;
-                            }
                         }
                         //데이터가 일치하지 않을 경우
                         else
